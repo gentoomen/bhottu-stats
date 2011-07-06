@@ -16,6 +16,16 @@
                     <td>nand</td>
                 </tr>
             </table>
+            
+            <table>
+                <tr><td>Top 15 bros by amount of posts:</td></tr>
+                <? /*generate row for each dude*/ ?>
+            </table>
+            
+            <form method="get" action="index.php">
+                <input type="text" name="name" />
+                <input type="submit" value="Search for that bro" />
+            </form>
         </center>
     </body>
 </html>
