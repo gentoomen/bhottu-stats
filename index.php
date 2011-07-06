@@ -2,14 +2,23 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 
+
+
+
+
+
+
 <? include "main.php" ?>
 
 <html>
     <head>
-        <meta name="description" content="<?php echo('IRC channel stats for $irc_channel @ $irc_network') ?>" />
-        <meta name="keywords" content="<?php echo('IRC,Stats,$irc_channel,$irc_network,bhottu') ?>" />
+        <meta name="description" content="<?php echo("IRC channel stats for $irc_channel @ $irc_network") ?>' />
+        <meta name="keywords" content="<?php echo("IRC,Stats,$irc_channel,$irc_network,bhottu") ?>' />
         <meta name="author" content="Gentoomen" />
-        <meta http-equiv="content-type" content="text/x-php;charset=UTF-8" />
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <title><?php echo("$irc_channel @ $irc_network stats"); ?>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        
     </head>
     <body>
         <center>
@@ -42,7 +51,8 @@
                 </form></td>
                 <?php if($_GET['name'])
                 {
-                    
+                    echo("<td class=\"lightbg\"><b>$_GET['name']</b> has a line count of a whopping <b>$linecount_nick</b>!</td>")
+                    echo("<td class=\"lightbg\">Last line said in channel: <b>$linecount_nick_last</b></td>")
 
             } ?>
         </center>
