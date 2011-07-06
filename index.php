@@ -1,3 +1,5 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 
 <? include "main.php" ?>
 
@@ -21,11 +23,12 @@
                 <tr><td>Top 15 bros by amount of posts:</td></tr>
                 <? /*generate row for each dude*/ ?>
             </table>
-            
+           
             <form method="get" action="index.php">
                 <input type="text" name="name" />
-                <input type="submit" value="Search for that bro" />
+                <input type="submit" value="Look up the line count of a specific bro" />
             </form>
+            <?php if($_GET['name']){echo('<p>This bro has written $linecount_nick lines.</p>')} ?>
         </center>
     </body>
 </html>
