@@ -8,9 +8,7 @@
 
 
 
-<? include "main.php" 
-
-$nick = $_GET['name'] ?>
+<? include "main.php" ?>
  
 
 <html>
@@ -54,6 +52,7 @@ $nick = $_GET['name'] ?>
                 </form></td>
                 <?php if($_GET['name'])
                 {
+                    $nick = $_GET['name']
                     echo("<td class=\"lightbg\"><b>$nick</b> has a line count of a whopping <b>$linecount_nick</b>!</td>")
                     echo("<td class=\"lightbg\">Last line said in channel: <b>$linecount_nick_last</b></td>")
 
