@@ -2,7 +2,7 @@
 <?php
 
 include "../config.php"
-if($_GET['name']) {
+if($_GET['name']); {
     $linecount_nick = sprintf("SELECT COUNT(*) FROM %s WHERE name='%s'",
 	    mysql_real_escape_string($tablename),
 	    mysql_real_escape_string($_GET['name']));
