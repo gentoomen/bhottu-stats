@@ -20,7 +20,7 @@
             </table>
             
             <table>
-                <tr><td>Top 15 bros by amount of posts:</td></tr>
+                <tr><td>Top 15 bros:</td><td>The amount of posts they posted:</td><td>The last thing what they posted:</td></tr>
                 <?= $top15 ?>
             </table>
            
