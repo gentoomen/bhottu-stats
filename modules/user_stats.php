@@ -1,11 +1,24 @@
-/*
- * ----------------------------------------------------------------------------
- * "THE BEER-WARE LICENSE" (Revision 42):
- * Emil Karlsson and DUke Derpington wrote this file. As long as you retain this notice you
- * can do whatever you want with this stuff. If we meet some day, and you think
- * this stuff is worth it, you can buy us a beer in return. Emil Karlsson and Duke Derpington
- * ----------------------------------------------------------------------------
- */
+
+<?
+
+$resource = mysql_query("SELECT name, points FROM nickscore ORDER BY points DESC LIMIT 15");
+
+while($row = mysql_fetch_row($resource)){
+  echo $row[0]; 
+}
+
+def showTop(channel, sender, amount):
+    """Shows the highest ranking users."""
+    if amount == None:
+        amount = 10
+    if amount < 0:
+        return
+    summary = ''
+    index = 1
+    for (name, points) in dbQuery():
+        summary += "%i. %s [%i] " % (index, name, points)
+        index += 1
+    sendMessage(channel, summary.strip())
 
 
-<? /*stuff*/ ?>
+?>
