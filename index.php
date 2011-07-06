@@ -22,7 +22,7 @@
         
     </head>
     <body>
-        <center>
+
             <table>
                 <tr>
                     <td>Total line count:</td>
@@ -43,7 +43,7 @@
            
             <table>
                 <tr>
-                <td class="headline"><b>Look up the line count of a specific bro</b>
+                <th class="headline"><b>Look up the line count of a specific bro</b></th>
                 </tr><tr>
                 <td class="lightbg">
                 <form method="get" action="index.php">
@@ -57,6 +57,5 @@
                     echo("<td class=\"lightbg\">Last line said in channel: <b>$linecount_nick_last</b></td>");
 
             } ?>
-        </center>
     </body>
 </html>
