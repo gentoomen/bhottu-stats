@@ -15,13 +15,13 @@ if (!$db_conn) {
     die('No connection to database - ' . mysql_error());
 }
 
-$resource = mysql_query();
-
 //load modules here
 include $modules_directory + 'post_count.php';
 include $modules_directory + 'user_stats.php';
 
 /* // ^these modules will load stuff like this -v
+$resource = mysql_query();
+
 while($row = mysql_fetch_row($resource)){
   echo $row[0]; 
 }
