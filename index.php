@@ -50,7 +50,7 @@
                     <input type="text" name="name">&nbsp;
                     <input type="submit" value="Submit">
                 </form></td>
-                <?php if($_GET['name'])
+                <?php if(!$_GET['name'])
                 {
                     $nick = $_GET['name']
                     echo("<td class=\"lightbg\"><b>$nick</b> has a line count of a whopping <b>$linecount_nick</b>!</td>")
