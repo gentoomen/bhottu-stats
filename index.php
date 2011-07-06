@@ -8,13 +8,13 @@
 
 
 
-<? include "main.php" ?>
+<? include "main.php"; ?>
  
 
 <html>
     <head>
-        <meta name="description" content="<?php echo("IRC channel stats for $irc_channel @ $irc_network") ?>' />
-        <meta name="keywords" content="<?php echo("IRC,Stats,$irc_channel,$irc_network,bhottu") ?>' />
+        <meta name="description" content="<?php echo("IRC channel stats for $irc_channel @ $irc_network"); ?>' />
+        <meta name="keywords" content="<?php echo("IRC,Stats,$irc_channel,$irc_network,bhottu"); ?>' />
         <meta name="author" content="Gentoomen" />
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <title><?php echo("$irc_channel @ $irc_network stats"); ?>
@@ -30,15 +30,15 @@
                     <td>Most banned person:</td>
                 </tr>
                 <tr>
-                    <td><? echo($linecount_total) ?></td>
-                    <td><? echo($top15) ?></td>
+                    <td><?php echo($linecount_total); ?></td>
+                    <td><?php echo($top15); ?></td>
                     <td>nand</td>
                 </tr>
             </table>
             
             <table>
                 <tr><td>Top 15 bros:</td><td>The amount of posts they posted:</td><td>The last thing what they posted:</td></tr>
-                <?= $top15 ?>
+                <?php echo($top15); ?>
             </table>
            
             <table>
@@ -50,11 +50,11 @@
                     <input type="text" name="name">&nbsp;
                     <input type="submit" value="Submit">
                 </form></td>
-                <?php if(!$_GET['name'])
+                <?php if($_GET['name']);
                 {
                     $nick = $_GET['name']
-                    echo("<td class=\"lightbg\"><b>$nick</b> has a line count of a whopping <b>$linecount_nick</b>!</td>")
-                    echo("<td class=\"lightbg\">Last line said in channel: <b>$linecount_nick_last</b></td>")
+                    echo("<td class=\"lightbg\"><b>$nick</b> has a line count of a whopping <b>$linecount_nick</b>!</td>");
+                    echo("<td class=\"lightbg\">Last line said in channel: <b>$linecount_nick_last</b></td>");
 
             } ?>
         </center>
