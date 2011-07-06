@@ -17,7 +17,7 @@
         <meta name="keywords" content="<?php echo("IRC,Stats,$irc_channel,$irc_network,bhottu"); ?>' />
         <meta name="author" content="Gentoomen" />
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-        <title><?php echo("$irc_channel @ $irc_network stats"); ?>
+        <title><?php echo("$irc_channel @ $irc_network stats"); ?></title>
         <link rel="stylesheet" type="text/css" href="style.css" />
         
     </head>
