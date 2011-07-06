@@ -14,7 +14,4 @@ $layout_background_color = "";
 //MODULES
 $modules_directory = ""; //Must end in "/"!
 
-include $modules_directory + 'post_count.php';
-include $modules_directory + 'user_stats.php';
-
 ?>
