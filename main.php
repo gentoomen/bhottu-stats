@@ -15,13 +15,17 @@ if (!$db_conn) {
     die('No connection to database - ' . mysql_error());
 }
 
-$resource = mysql_query(); //SELECT * FROM table WHERE condition
+$resource = mysql_query();
 
-//here we will parse everything
+//load modules here
+include $modules_directory + 'post_count.php';
+include $modules_directory + 'user_stats.php';
+
+/* // ^these modules will load stuff like this -v
 while($row = mysql_fetch_row($resource)){
   echo $row[0]; 
 }
-//no more parsing; output handled by layout.php I guess - or we could put it at the bottom of this file
+*/
 
 mysql_close($sql);
 
