@@ -21,7 +21,7 @@
             
             <table>
                 <tr><td>Top 15 bros by amount of posts:</td></tr>
-                <? /*generate row for each dude*/ ?>
+                <?= $top15 ?>
             </table>
            
             <form method="get" action="index.php">
