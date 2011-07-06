@@ -35,10 +35,14 @@
                 <tr>
                 <td class="headline"><b>Look up the line count of a specific bro</b>
                 </tr><tr>
+                <td class="lightbg">
                 <form method="get" action="index.php">
-                    <input type="text" name="name" />
-                    <input type="submit" value="Look up the line count of a specific bro" />
-                </form>
+                    <input type="text" name="name">&nbsp;
+                    <input type="submit" value="Submit">
+                </form></td>
+                <?php if($_GET['name'])
+                {
+                    
 
             } ?>
         </center>
