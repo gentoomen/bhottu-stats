@@ -41,6 +41,8 @@
                 <?php echo($top15); ?>
             </table>
            
+            <? echo(print_r(error_get_last())); ?>
+
             <table>
                 <tr>
                 <th class="headline"><b>Look up the line count of a specific bro</b></th>
